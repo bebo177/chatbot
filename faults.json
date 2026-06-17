@@ -1,0 +1,762 @@
+[
+  {
+    "fault_id": "ABS_001",
+    "system": "ABS",
+    "fault_ar": "عطل في حساس سرعة العجلة",
+    "fault_en": "Wheel Speed Sensor Failure",
+    "user_symptoms": [
+      "لمبة ABS منورة",
+      "لمبة ال ABS شغالة",
+      "نور الـ ABS فاتح",
+      "الفرامل بتفصل",
+      "الفرامل مش بتمسك",
+      "الفرامل بتزقزق",
+      "ABS light on",
+      "ABS warning light",
+      "brakes not working",
+      "brake failure"
+    ],
+    "base_confidence": 0.88,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "اللمبة منورة طول الوقت ولا بتنور وتطفي؟",
+        "question_en": "Is the light on constantly or flashing?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "بتحس الفرامل بترعش لما تكبس؟",
+        "question_en": "Do you feel pedal vibration when braking?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "روح لكهربائي سيارات يفحص حساس سرعة العجلات الأربع بالـscanner",
+        "افحص الأسلاك الموصلة للحساس - ممكن تكون مقطوعة أو مأكولة",
+        "متركبش العربية لمسافات طويلة لحد ما تتصلح"
+      ],
+      "recommended_fix_en": [
+        "Have an auto-electrician scan all four wheel speed sensors",
+        "Check the sensor wiring harness for cuts or corrosion",
+        "Avoid long-distance driving until repaired"
+      ]
+    }
+  },
+  {
+    "fault_id": "ABS_002",
+    "system": "ABS",
+    "fault_ar": "عطل في كمبيوتر الـ ABS",
+    "fault_en": "ABS Control Module Failure",
+    "user_symptoms": [
+      "لمبة ABS منورة",
+      "الدواسة بترعش",
+      "دواسة الفرامل بترعش",
+      "الفرامل بتقفش",
+      "الفرامل بقت تقيلة",
+      "ABS module failure",
+      "brake pedal vibrating",
+      "hard brake pedal"
+    ],
+    "base_confidence": 0.89,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "بتحس رعشة في الدواسة لما تفرمل بقوة؟",
+        "question_en": "Do you feel vibration when braking hard?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "المشكلة بتحصل بعد ما العربية تسخن؟",
+        "question_en": "Does it happen after the car warms up?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "محتاج scanner متخصص يقرا أكواد العطل من وحدة الـ ABS",
+        "غالبًا الحل تغيير وحدة الـ ABS أو إعادة برمجتها",
+        "روح لتوكيل أو مركز صيانة متخصص - مش أي ميكانيكي"
+      ],
+      "recommended_fix_en": [
+        "Specialist scanner needed to read ABS module fault codes",
+        "Usually requires module replacement or reprogramming",
+        "Visit dealership or specialized shop, not a general mechanic"
+      ]
+    }
+  },
+  {
+    "fault_id": "ABS_003",
+    "system": "ABS",
+    "fault_ar": "مشكلة في أسلاك الـ ABS",
+    "fault_en": "ABS Wiring Issue",
+    "user_symptoms": [
+      "لمبة ABS بتنور وتطفي",
+      "نور الـ ABS بيظهر ويختفي",
+      "لمبة فرامل بتيجي وتروح",
+      "ABS light flashing",
+      "intermittent ABS warning"
+    ],
+    "base_confidence": 0.79,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "اللمبة بتطلع أكتر لما تعدي مطبات أو حفر؟",
+        "question_en": "Does the light appear more on bumps or rough roads?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "العَرَض بيزيد في الجو الرطب أو بعد الغسيل؟",
+        "question_en": "Does it worsen in humid weather or after car washes?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "medium",
+      "can_drive": "yes_with_caution",
+      "recommended_fix_ar": [
+        "افحص توصيلات الكابل تحت العربية - غالبًا أسلاك مقطوعة",
+        "نضّف الكونكتورات وحطّ عليها dielectric grease",
+        "ممكن تسوقها بحذر لحد ما تصلحها بس متعتمدش على الـ ABS"
+      ],
+      "recommended_fix_en": [
+        "Inspect wiring connectors under the vehicle for breaks",
+        "Clean connectors and apply dielectric grease",
+        "Safe to drive cautiously but don't rely on ABS"
+      ]
+    }
+  },
+  {
+    "fault_id": "COOL_001",
+    "system": "Cooling",
+    "fault_ar": "عطل في مروحة الراديتر",
+    "fault_en": "Radiator Fan Failure",
+    "user_symptoms": [
+      "العربية بتسخن في الزحمة",
+      "العربية بتسخن وانا واقف",
+      "حرارة بتعلى في الإشارة",
+      "الموتور بيسخن لما الدنيا حر",
+      "مروحة مش شغالة",
+      "المروحة مش بتلف",
+      "car overheats in traffic",
+      "fan not working",
+      "engine hot when idle"
+    ],
+    "base_confidence": 0.9,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "الحرارة بترجع عادي لما تتحرك؟",
+        "question_en": "Does temperature drop when you start moving?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "بتسمع صوت المروحة شغالة؟",
+        "question_en": "Can you hear the fan running?",
+        "answers": {
+          "أيوه": -0.1,
+          "لا": 0.15,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "افحص المروحة شغالة لما الحرارة توصل 90 درجة",
+        "ممكن تكون المروحة نفسها أو الـrelay أو حساس الحرارة",
+        "متركبش العربية في الزحمة - ممكن يحرقلك الموتور"
+      ],
+      "recommended_fix_en": [
+        "Check if the fan engages when temp reaches 90°C",
+        "Could be the fan motor, relay, or temperature sensor",
+        "Avoid traffic — risk of engine damage from overheating"
+      ]
+    }
+  },
+  {
+    "fault_id": "COOL_002",
+    "system": "Cooling",
+    "fault_ar": "نقص في مياه التبريد",
+    "fault_en": "Low Coolant Level",
+    "user_symptoms": [
+      "حرارة بتعلى",
+      "نقص مياه",
+      "الموتور بيسخن",
+      "الردياتير فاضي",
+      "علبة المياه فاضية",
+      "بخار طالع من الكبوت",
+      "low coolant",
+      "engine overheating",
+      "steam from hood",
+      "coolant leak"
+    ],
+    "base_confidence": 0.85,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "في تنقيط مياه تحت العربية؟",
+        "question_en": "Any water dripping under the car?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "بتحط مياه كتير وبتقل بسرعة؟",
+        "question_en": "Are you topping up coolant frequently?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "medium",
+      "can_drive": "yes_with_caution",
+      "recommended_fix_ar": [
+        "زوّد مياه التبريد لحد المستوى المطلوب فورًا",
+        "افحص الردياتير والخراطيم لو فيه تسريب",
+        "افحص الـwater pump و الـreservoir cap",
+        "متفتحش غطاء الردياتير والعربية سخنة - خطر حروق"
+      ],
+      "recommended_fix_en": [
+        "Top up coolant to the proper level immediately",
+        "Inspect radiator and hoses for leaks",
+        "Check water pump and reservoir cap",
+        "Never open the radiator cap when hot — burn hazard"
+      ]
+    }
+  },
+  {
+    "fault_id": "COOL_003",
+    "system": "Cooling",
+    "fault_ar": "ترموستات مغلوق",
+    "fault_en": "Thermostat Stuck",
+    "user_symptoms": [
+      "مروحة شغالة طول الوقت",
+      "حرارة عالية",
+      "الحرارة في النص دايما",
+      "العربية بتسخن بسرعة",
+      "السخان مش بيدفي",
+      "thermostat stuck",
+      "engine runs hot",
+      "heater not blowing hot"
+    ],
+    "base_confidence": 0.83,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "الحرارة بتعلى بسرعة بعد ما تشغّل العربية؟",
+        "question_en": "Does temperature rise quickly after starting?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "السخان (الهيتر) بيطلع هوا دافي عادي؟",
+        "question_en": "Is the heater blowing warm air normally?",
+        "answers": {
+          "أيوه": -0.1,
+          "لا": 0.15,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "غيّر الترموستات - قطعة رخيصة بس مهمة جدًا",
+        "افحص حساس الحرارة برضه لو الميكانيكي شك فيه",
+        "بعد التغيير، اعمل bleeding لنظام التبريد من الهوا"
+      ],
+      "recommended_fix_en": [
+        "Replace the thermostat — cheap part, critical role",
+        "Have the temperature sensor checked too",
+        "Bleed the cooling system of air after replacement"
+      ]
+    }
+  },
+  {
+    "fault_id": "ELEC_001",
+    "system": "Electrical",
+    "fault_ar": "عطل في الدينامو",
+    "fault_en": "Alternator Failure",
+    "user_symptoms": [
+      "لمبة بطارية",
+      "العربية بتفصل",
+      "نور البطارية شغال",
+      "العربية بتقفش وانت ماشي",
+      "البطارية مش بتشحن",
+      "alternator failure",
+      "battery warning light",
+      "car stalls while driving"
+    ],
+    "base_confidence": 0.87,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "البطارية بتنزل بسرعة حتى لو شاحنها؟",
+        "question_en": "Does the battery drain quickly even after charging?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "الأنوار بتضعف لما تشغّل المكيف؟",
+        "question_en": "Do lights dim when AC is on?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "قس voltage البطارية والعربية شغالة - لازم تكون بين 13.5 و 14.5",
+        "غيّر الدينامو أو نظّفه عند متخصص",
+        "افحص سير الدينامو لو متفلت أو مقطوع",
+        "متركبش بعيد - ممكن العربية تفصل في أي وقت"
+      ],
+      "recommended_fix_en": [
+        "Measure voltage while running — should be 13.5–14.5V",
+        "Replace or rebuild the alternator at a specialist",
+        "Check the alternator belt for slack or wear",
+        "Don't drive far — engine could die any moment"
+      ]
+    }
+  },
+  {
+    "fault_id": "ELEC_002",
+    "system": "Electrical",
+    "fault_ar": "بطارية ضعيفة",
+    "fault_en": "Battery Weak",
+    "user_symptoms": [
+      "إضاءة ضعيفة",
+      "العربية مش بتدور",
+      "العربية بتدور بصعوبة",
+      "الأنوار ضعيفة",
+      "صوت دوران ضعيف",
+      "weak battery",
+      "car won't start",
+      "dim headlights",
+      "slow cranking"
+    ],
+    "base_confidence": 0.84,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "العربية بتقعد ساعات كتير من غير ما تشتغل؟",
+        "question_en": "Does the car sit for long periods without running?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "البطارية عمرها أكتر من 3 سنين؟",
+        "question_en": "Is the battery more than 3 years old?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "medium",
+      "can_drive": "yes_with_caution",
+      "recommended_fix_ar": [
+        "قس voltage البطارية والعربية مطفية - لازم تكون فوق 12.4",
+        "نظّف أطراف البطارية من الصدأ",
+        "لو البطارية أكتر من 3 سنين الأفضل تغيّرها",
+        "خد كابلات شحن معاك احتياطي"
+      ],
+      "recommended_fix_en": [
+        "Measure resting voltage — should be above 12.4V",
+        "Clean corrosion off battery terminals",
+        "If battery is 3+ years old, replace it",
+        "Keep jumper cables in the car as backup"
+      ]
+    }
+  },
+  {
+    "fault_id": "ENG_001",
+    "system": "Engine",
+    "fault_ar": "عطل في حساس MAF",
+    "fault_en": "MAF Sensor Fault",
+    "user_symptoms": [
+      "سحب ضعيف",
+      "صرفية بنزين عالية",
+      "العربية مش بتسحب",
+      "العربية بقت بطيئة",
+      "استهلاك بنزين زاد",
+      "MAF sensor fault",
+      "poor acceleration",
+      "high fuel consumption",
+      "loss of power"
+    ],
+    "base_confidence": 0.81,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "السحب بقى ضعيف في السرعات العالية بالذات؟",
+        "question_en": "Is power loss more noticeable at high speeds?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "صرفية البنزين زادت في الفترة الأخيرة؟",
+        "question_en": "Has fuel consumption increased recently?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "medium",
+      "can_drive": "yes_with_caution",
+      "recommended_fix_ar": [
+        "نضّف حساس الـ MAF بـ MAF cleaner spray (مش أي معطر)",
+        "افحص فلتر الهوا - لو متسخ غيّره الأول",
+        "لو التنضيف ملوش لازمة، الحساس محتاج تغيير"
+      ],
+      "recommended_fix_en": [
+        "Clean the MAF sensor with MAF cleaner spray only",
+        "Check air filter — replace if dirty before testing",
+        "If cleaning doesn't help, replace the sensor"
+      ]
+    }
+  },
+  {
+    "fault_id": "ENG_002",
+    "system": "Engine",
+    "fault_ar": "اختلال في الإشعال (Misfire)",
+    "fault_en": "Engine Misfire",
+    "user_symptoms": [
+      "العربية بتنتش",
+      "رعشة في الموتور",
+      "الموتور بيهتز",
+      "الموتور بينتش وهو واقف",
+      "صوت ضربات في الموتور",
+      "engine misfire",
+      "rough idle",
+      "engine vibration",
+      "knocking sound"
+    ],
+    "base_confidence": 0.88,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "النتش بيحصل وانت واقف أكتر ولا وانت ماشي؟",
+        "question_en": "Does misfire happen more at idle or while driving?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": 0.1,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "لمبة الموتور (check engine) منورة؟",
+        "question_en": "Is the check engine light on?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "افحص البواجي وغيّرهم لو عليهم كربون أو محروقين",
+        "افحص كويلات الإشعال (ignition coils)",
+        "افحص رشاشات البنزين (injectors)",
+        "متركبش العربية كده - بيدمّر الـcatalytic converter"
+      ],
+      "recommended_fix_en": [
+        "Inspect spark plugs — replace if fouled or worn",
+        "Check ignition coils for failure",
+        "Inspect fuel injectors",
+        "Don't drive — sustained misfire destroys the catalytic converter"
+      ]
+    }
+  },
+  {
+    "fault_id": "ENG_003",
+    "system": "Engine",
+    "fault_ar": "عطل في حساس الأكسجين",
+    "fault_en": "Oxygen Sensor Fault",
+    "user_symptoms": [
+      "استهلاك بنزين عالي",
+      "لمبة موتور",
+      "check engine منور",
+      "صرفية بنزين زادت",
+      "ريحة بنزين من الشكمان",
+      "oxygen sensor",
+      "O2 sensor",
+      "check engine light",
+      "high fuel consumption"
+    ],
+    "base_confidence": 0.78,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "لمبة الموتور منورة من فترة طويلة؟",
+        "question_en": "Has the check engine light been on for a while?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "العربية ماشية عادي بس البنزين بيخلص بسرعة؟",
+        "question_en": "Does the car drive fine but fuel runs out quickly?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "low",
+      "can_drive": "yes_with_caution",
+      "recommended_fix_ar": [
+        "اعمل scanner عند ميكانيكي علشان يحدد أنهي حساس O2 العطلان",
+        "غيّر حساس الأكسجين - في عربيات فيها 2 أو 4 حساسات",
+        "العربية ماشية عادي بس بتاكل بنزين أكتر - مش طارئ"
+      ],
+      "recommended_fix_en": [
+        "Run a scanner to identify which O2 sensor is faulty",
+        "Replace the sensor — cars may have 2 or 4 sensors",
+        "Drivable, just costs more fuel — not urgent"
+      ]
+    }
+  },
+  {
+    "fault_id": "ENG_004",
+    "system": "Engine",
+    "fault_ar": "بوابة الهوا (Throttle Body) متسخة",
+    "fault_en": "Throttle Body Dirty",
+    "user_symptoms": [
+      "RPM بيعوم",
+      "العربية بتفصل",
+      "العداد بيهتز وانت واقف",
+      "الموتور بيقفش وانت في الإشارة",
+      "RPM fluctuating",
+      "throttle body dirty",
+      "rough idle",
+      "car stalls at idle"
+    ],
+    "base_confidence": 0.82,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "العَرَض ده بقاله فترة بيزيد مع الوقت؟",
+        "question_en": "Has the problem been getting worse over time?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "العربية بتفصل لما تكون واقف على الإشارة؟",
+        "question_en": "Does the car stall when stopped at lights?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "medium",
+      "can_drive": "yes_with_caution",
+      "recommended_fix_ar": [
+        "نضّف الـ throttle body بمنظف مخصوص (throttle body cleaner)",
+        "بعد التنضيف لازم تعمل reset / re-learn للـ ECU",
+        "افحص فلتر الهوا - لو متسخ بيوسّخ الـ throttle بسرعة"
+      ],
+      "recommended_fix_en": [
+        "Clean the throttle body with proper throttle body cleaner",
+        "After cleaning, perform ECU idle relearn procedure",
+        "Replace air filter if dirty — prevents recurrence"
+      ]
+    }
+  },
+  {
+    "fault_id": "TRANS_001",
+    "system": "Transmission",
+    "fault_ar": "عطل في حساس الفتيس",
+    "fault_en": "Gearbox Sensor Fault",
+    "user_symptoms": [
+      "العربية مبتنقلش",
+      "لمبة فتيس",
+      "الفتيس مش بينقل",
+      "العربية واقفة على غيار واحد",
+      "نور الفتيس منور",
+      "transmission sensor",
+      "gearbox warning",
+      "won't shift gears",
+      "stuck in gear"
+    ],
+    "base_confidence": 0.86,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "الفتيس بينقل بس متأخر، ولا مش بينقل خالص؟",
+        "question_en": "Does it shift late, or not at all?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": 0.15,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "نور الفتيس بيظهر في العداد؟",
+        "question_en": "Is the transmission warning light on?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.1,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "محتاج scanner متخصص في الفتيس يقرا أكواد العطل",
+        "روح لمتخصص فتيس - مش أي ميكانيكي عادي",
+        "متركبش العربية - ممكن الفتيس يتلف ويبقى تصليحه بالآلاف"
+      ],
+      "recommended_fix_en": [
+        "Specialist transmission scanner needed for fault codes",
+        "Visit a transmission specialist, not a general mechanic",
+        "Stop driving — continued use can ruin the gearbox"
+      ]
+    }
+  },
+  {
+    "fault_id": "TRANS_002",
+    "system": "Transmission",
+    "fault_ar": "زيت الفتيس قليل",
+    "fault_en": "Low Transmission Fluid",
+    "user_symptoms": [
+      "تأخير في الغيار",
+      "نتشة في النقل",
+      "الفتيس بيأخر في التغيير",
+      "الفتيس بيلسع وهو بينقل",
+      "ريحة محروق من الفتيس",
+      "low transmission fluid",
+      "delayed shifting",
+      "transmission slipping",
+      "burnt smell"
+    ],
+    "base_confidence": 0.84,
+    "questions": [
+      {
+        "id": "q1",
+        "question_ar": "العَرَض بيظهر أكتر لما العربية تكون باردة؟",
+        "question_en": "Is the issue worse when the car is cold?",
+        "answers": {
+          "أيوه": 0.15,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      },
+      {
+        "id": "q2",
+        "question_ar": "في تنقيط زيت تحت العربية؟",
+        "question_en": "Any fluid leak under the car?",
+        "answers": {
+          "أيوه": 0.1,
+          "لا": -0.05,
+          "مش عارف": 0.0
+        }
+      }
+    ],
+    "final_diagnosis": {
+      "risk_level": "high",
+      "can_drive": "no",
+      "recommended_fix_ar": [
+        "افحص مستوى زيت الفتيس - لازم يكون العربية شغالة وعلى مكان مستوي",
+        "زوّد زيت الفتيس من النوع المحدد في كتالوج العربية بالظبط",
+        "لو فيه تسريب لازم تصلّحه قبل ما تزوّد",
+        "زيت قليل بيحرق الفتيس بسرعة - تصليحه ممكن يكلف 30 ألف+"
+      ],
+      "recommended_fix_en": [
+        "Check fluid level with engine running on level ground",
+        "Top up with the exact fluid spec from the manual",
+        "Fix any leak before refilling",
+        "Low fluid burns out the transmission fast — costly repair"
+      ]
+    }
+  }
+]
